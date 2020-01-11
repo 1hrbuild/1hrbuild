@@ -15,6 +15,7 @@ const Layout: React.FunctionComponent<Props> = ({
       <title>{title}</title>
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <meta name="google-site-verification" content="G2bP_qvOinbHxcUiM2u6LQnkA8_ZFyYuFnoYQF4BPlw" />
     </Head>
     <header>
       <nav>
