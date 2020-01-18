@@ -14,10 +14,6 @@ const Layout: React.FunctionComponent<Props> = ({ children, title }) => (
       <title>1hrbuild | {title}</title>
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      <meta
-        name="google-site-verification"
-        content="G2bP_qvOinbHxcUiM2u6LQnkA8_ZFyYuFnoYQF4BPlw"
-      />
       <link rel="icon" href="./favicon.png" />
     </Head>
     <GlobalStyle />

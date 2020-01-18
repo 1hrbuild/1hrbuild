@@ -22,7 +22,6 @@ type Props = {
 
 class InitialPropsDetail extends React.Component<Props> {
   static getInitialProps = async ({ query }: NextPageContext) => {
-    console.log({ query })
     const { epId } = query
     // let extraContent
     // try {
@@ -34,7 +33,6 @@ class InitialPropsDetail extends React.Component<Props> {
   }
 
   render() {
-    console.log(this.props)
     const { epId, episode } = this.props
     // const epNum = epId.match(/\d+/g)?.join("")
     const displayTitle = `${toTitleCase(epId)}:  ${episode.title}`
