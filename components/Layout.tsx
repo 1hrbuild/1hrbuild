@@ -1,43 +1,50 @@
-import * as React from 'react'
-import Link from 'next/link'
-import Head from 'next/head'
+import * as React from "react"
+import Link from "next/link"
+import Head from "next/head"
+
+import GlobalStyle from "./GlobalStyles"
 
 type Props = {
-  title?: string
+  title: string
 }
 
-const Layout: React.FunctionComponent<Props> = ({
-  children,
-  title = 'This is the default title',
-}) => (
-  <div>
+const Layout: React.FunctionComponent<Props> = ({ children, title }) => (
+  <React.Fragment>
     <Head>
-      <title>{title}</title>
+      <title>1hrbuild | {title}</title>
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      <meta name="google-site-verification" content="G2bP_qvOinbHxcUiM2u6LQnkA8_ZFyYuFnoYQF4BPlw" />
+      <meta
+        name="google-site-verification"
+        content="G2bP_qvOinbHxcUiM2u6LQnkA8_ZFyYuFnoYQF4BPlw"
+      />
+      <link rel="icon" href="./favicon.png" />
     </Head>
-    <header>
-      <nav>
-        <Link href="/">
-          <a>Home</a>
-        </Link>{' '}
-        |{' '}
-        <Link href="/about">
-          <a>About</a>
-        </Link>{' '}
-        |{' '}
-        <Link href="/users">
-          <a>Users List</a>
-        </Link>
-      </nav>
-    </header>
-    {children}
-    <footer>
-      <hr />
-      <span>I'm here to stay (Footer)</span>
-    </footer>
-  </div>
+    <GlobalStyle />
+    <div className="overlay"></div>
+    <main>
+      <header>
+        <div className="logo">
+          <Link href="/">
+            <button>
+              <img src="/1hrb3.png" />
+            </button>
+          </Link>
+        </div>
+        <h1 className="title">{title}</h1>
+      </header>
+      {children}
+      <footer className="high">
+        © 2020 1hrbuild{" "}
+        <a href="https://twitter.com/1hrbuild" target="__blank">
+          <img
+            className="footer-icon"
+            src="Twitter_Social_Icon_Circle_White.png"
+          />
+        </a>
+      </footer>
+    </main>
+  </React.Fragment>
 )
 
 export default Layout
