@@ -1,0 +1,20 @@
+{
+  "id": "ep1",
+  "title": "Building this website",
+
+  "teaserText": "In this episode, I build this website in an hour. Wow, such meta.",
+  "introText": [
+    "Since I needed a home for 1hr build, it seemed fitting that the first episode should revolve around building a website. I wanted something that would load super-fast, centered around static content, but with flexiblity to become more interactive in future. It also had to be easy to add a new episode, so I sought a platform that would be nice and template-y, but with the ability to easily deviate from the template if needed.",
+    "I considered using Gatsby, but NextJS seemed like a better fit given the possibility of evolving interactivity. Now.sh (Zeit) was the obvious choice for deployment since it’s free until you get popular and is developed by the same crack team that does NextJS. Although the Zeit platform is fantastic, I made sure to separate my content from my presentation layer to make any future migration to a different tech stack easier.",
+    "Although the actual construction of the site only took one hour, I spent a couple of hours on design before I began building. I wanted something kind of modern with large, clear text, a flat aesthetic, and a semi-transparent hero image in the background. Inspired by some popular video-centric websites, I opted for a dark theme that wouldn’t strain the eyes but which adhered to accessibility standards, which is important in all web design."
+  ],
+  "technologies": [
+    { "id": "react", "name": "ReactJS", "link": "https://reactjs.org/" },
+    { "id": "next", "name": "NextJS", "link": "https://nextjs.org/" },
+    { "id": "now", "name": "Now.sh", "link": "https://zeit.co/home" }
+  ],
+  "links": {
+    "youtube": "https://www.youtube.com/embed/4SwMKuGNBrs",
+    "github": "string"
+  }
+}
