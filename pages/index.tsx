@@ -1,16 +1,7 @@
 import * as React from "react"
-// import Link from 'next/link'
 import Layout from "../components/Layout"
 import { NextPage } from "next"
-// import { Episode } from "../interfaces"
-// import EpisodeThumbnail from "../components/EpisodeThumbnail"
 import EpisodeBrowser from "../components/EpisodeBrowser"
-
-// const allEpisodes = require('../episodes/manifest.json')
-
-// const ThumbnailContainer: React.FunctionComponent = props => (
-//   <section className="container-thumbail-container">{props.children}</section>
-// )
 
 const IndexPage: NextPage = () => {
   return (
@@ -27,15 +18,6 @@ const IndexPage: NextPage = () => {
           <EpisodeBrowser />
         </section>
       </article>
-      {/* <ThumbnailContainer>
-        {allEpisodes.map((epId: string) => (
-          <EpisodeThumbnail
-            key={epId}
-            epId={epId}
-            isActive={false}
-          />
-        ))}
-      </ThumbnailContainer> */}
     </Layout>
   )
 }
