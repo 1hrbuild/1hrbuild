@@ -23,18 +23,12 @@ type Props = {
 class InitialPropsDetail extends React.Component<Props> {
   static getInitialProps = async ({ query }: NextPageContext) => {
     const { epId } = query
-    // let extraContent
-    // try {
-    //   extraContent = require(`../episodes/${epId}`).default()
-    // } catch {}
     const episode = require(`../episodes/${epId}.json`)
     return { epId, episode }
-    // return { title: "hoo", epId, extraContent }
   }
 
   render() {
     const { epId, episode } = this.props
-    // const epNum = epId.match(/\d+/g)?.join("")
     const displayTitle = `${toTitleCase(epId)}:  ${episode.title}`
     return (
       <Layout title={displayTitle}>
@@ -44,7 +38,6 @@ class InitialPropsDetail extends React.Component<Props> {
               <p key={idx}>{paragraph}</p>
             ))}
           </section>
-          {/* <section className="high shadow bigly"> */}
           <section>
             <h3>
               Tech:{" "}
@@ -64,8 +57,6 @@ class InitialPropsDetail extends React.Component<Props> {
           </section>
           <EmbeddedVideo youtubeLink={episode.links.youtube} />
           <EpisodeBrowser activeEpId={epId} />
-          {/* {require(`../episodes/${epId}`).default({})} */}
-          {/* {this.props.extraContent && this.props.extraContent} */}
         </article>
       </Layout>
     )

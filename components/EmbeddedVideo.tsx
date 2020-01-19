@@ -17,7 +17,3 @@ const EmbeddedVideo: React.FunctionComponent<EmbeddedVideoProps> = ({
 )
 
 export default EmbeddedVideo
-
-{
-  /* "https://www.youtube.com/embed/4SwMKuGNBrs" */
-}
