@@ -19,8 +19,8 @@ const EpisodeThumbnail: React.FunctionComponent<ThumbnailProps> = ({
     : "image-thumbnail bigly"
   const containerClass = isActive ? "thumbnail thumbnail-active" : "thumbnail"
   const button = () => (
-    <button>
-      <img className={imageClass} src={`${epId}.png`} />
+    <button aria-role={`Go to Episode ${epNum}`}>
+      <img className={imageClass} src={`${epId}.png`} alt={`Episode ${epNum} thumbnail`}/>
     </button>
   )
   return (

@@ -22,8 +22,8 @@ const Layout: React.FunctionComponent<Props> = ({ children, title }) => (
       <header>
         <div className="logo">
           <Link href="/">
-            <button>
-              <img src="/1hrb3.png" />
+            <button aria-label="Go to homepage">
+              <img src="/1hrb3.png" alt="1hourbuild logo"/>
             </button>
           </Link>
         </div>
@@ -32,7 +32,7 @@ const Layout: React.FunctionComponent<Props> = ({ children, title }) => (
       {children}
       <footer className="high">
         © 2020 1hrbuild{" "}
-        <a href="https://twitter.com/1hrbuild" target="__blank">
+        <a href="https://twitter.com/1hrbuild" target="__blank" aria-label="Twitter">
           <img
             className="footer-icon"
             src="Twitter_Social_Icon_Circle_White.png"
